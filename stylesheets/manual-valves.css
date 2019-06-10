@@ -1,0 +1,363 @@
+/* line 1, ../sass/nb.scss */
+body {
+  margin: 0;
+}
+a:link {
+    color: transparent;
+}
+a:visited {
+    color: transparent;
+}
+a:hover {
+    color: transparent;
+}
+a:active {
+    color:transparent;
+}
+
+/* line 5, ../sass/nb.scss */
+.nbcontainer {
+  color: white;
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin-bottom: 10px;
+  /*width: 90%;*/
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  color:black;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.nb{
+  width:90%;
+  margin:0 auto;
+  display:block;
+}
+
+.logo{
+  width:30%;
+ }
+
+ .menu{
+  width:69%;
+ }
+
+ /* line 76, ../sass/nb.scss */
+.opt {
+  display: inline-block;
+  padding:10px;
+  cursor:pointer;
+}
+
+.opt i{
+  padding-right:5px;
+}
+
+/* line 80, ../sass/nb.scss */
+
+
+/* line 30, ../sass/nb.scss */
+.logopic {
+  height: 80px;
+}
+
+/* line 33, ../sass/nb.scss */
+.nbpart {
+  height: 80px;
+  display: inline-block;
+  /*width: 3;*/
+}
+
+.menulist {
+  font-size: 17px;
+  line-height: 4.5;
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#resmenu {
+  z-index:1;
+  position: fixed;
+  top: 85px;
+  opacity: 0;
+  width: 0%;
+  margin-left: auto;
+  /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  /*color: white;*/
+  padding-top: 30px;
+  background-color: white;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* line 94, ../sass/nb.scss */
+.dropdownanim {
+  animation: dropdown 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes dropdown {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+/* line 117, ../sass/nb.scss */
+.dropupanim {
+  animation: dropup 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes dropup {
+  from {
+    width: 100%;
+    opacity: 1;
+  }
+  to {
+    width: 0%;
+    opacity: 0;
+  }
+}
+/* line 140, ../sass/nb.scss */
+.resmenulist {
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+/* line 145, ../sass/nb.scss */
+.resmenulist li {
+  display:block;
+  padding: 20px;
+  font-size:20px;
+  cursor:pointer;
+}
+.resopt{
+  color:black;
+}
+
+.togbut{
+  display:none;
+  cursor:pointer;
+}
+
+.togbut i{
+  line-height: 2.5;
+  font-size:32px;
+}
+
+
+
+@media only screen and (max-width:1000px){
+  .logo{
+    width:17%;
+    /*min-width: 105px;*/
+  }
+  
+  .menu{
+    width:82%;
+  }
+  .menulist{
+    font-size:13.5px;
+    line-height:5.5;
+  }
+ }
+
+
+@media only screen and (max-width: 768px) {
+  /* line 33, ../sass/nb.scss */
+  .nbpart {
+    width: 49%;
+  }
+  .menulist .togbut {
+    display: block;
+  }
+  /* line 71, ../sass/nb.scss */
+  .menulist .opt {
+    display: none;
+  }
+  .nbcontainer {
+    width: 100%;
+    padding: 0;
+  }
+  .togbut{
+    display:block;
+  }
+}
+
+/* line 151, ../sass/nb.scss */
+.xs {
+  color: black;
+}
+
+/* line 155, ../sass/nb.scss */
+.body2 {
+  margin-top: 150px;
+}
+ 
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  display:block;
+  line-height: 3.5;
+  text-align:center;
+  text-decoration: none;
+  color:black;
+  padding:0 5px;
+}
+
+.dropdown-content a:hover{
+  background-color:lightgrey;
+}
+
+.dd1:hover .ddc1 {
+  display: block;
+}
+.dd2:hover .ddc2 {
+  display: block;
+}
+
+
+
+.but{
+  text-align:center;
+  width:150px;
+  padding:7px;
+  margin:0 auto;
+  display:block;
+  border:2px solid #2153a2;
+  background-color: #2153a2;
+  color:white;
+  border-radius:5px;
+  margin-top:50px;
+}
+
+.prodlist{
+  width:868px;
+  margin:0 auto;
+  display:block;
+}
+
+.prod{
+  margin:20px;
+  padding:20px;
+  width:350px;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  display:inline-block;
+
+}
+
+.prodtxt{
+  font-family: 'Rubik', sans-serif;
+  vertical-align: top;
+  width:49%;
+  display:inline-block;
+}
+
+.prodpic{
+  width:49%;
+  display:inline-block;
+}
+
+.prodpic img{
+  width:150px;
+  height:150px;
+}
+
+.prodname{
+  text-align:center;
+}
+
+@media only screen and (max-width:875px){
+  .prod{
+    width:300px;
+    padding:10px;
+  }
+
+  .prodlist{
+    width:730px;
+  }
+
+  .prodtxt{
+    font-size:13px;
+  }
+  .prodpic img{
+    width:120px;
+  }
+  .but{
+    font-size:13px;
+    width:120px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .prod{
+    /*margin:20px;*/
+    /*display:block;*/
+    width:170px;
+    height:250px;
+  }
+  .but{
+    margin-top:20px;
+  }
+  .prodtxt{
+    display:block;
+    text-align: center;
+    width:100%;
+  }
+  .prodpic{
+    display:block;
+    width:100%;
+  }
+  .prodlist{
+    width:705px;
+  }
+  .prodpic img{
+    margin:0 auto;
+    display:block;
+  }
+}
+
+@media only screen and (max-width:710px){
+  .prodlist{
+    width:470px;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .prodlist{
+    width:auto;
+  }
+
+  .prod{
+    margin:30px auto;
+    display:block;
+  }
+}
+
